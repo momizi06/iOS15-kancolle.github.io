@@ -8,14 +8,15 @@ class iOS15_kancolle {
     s.rel='stylesheet';
     s.href='https://iOS15-kancolle.github.io/iframe.css';
     document.body.appendChild(s);
-    s=document.createElement('br');
+    s=document.createElement('div');
+    s.id='kancolle_support_site';
     document.body.appendChild(s);
     s=document.createElement('iframe');
     s.src='http://kancollecalc.jp/air_supremacy.html';
-    document.body.appendChild(s);
+    document.getElementById('kancolle_support_site').appendChild(s);
     s=document.createElement('iframe');
     s.src='http://kc2ndexpcalc.web.fc2.com';
-    document.body.appendChild(s);
+    document.getElementById('kancolle_support_site').appendChild(s);
   }
 };
 window.iOS15_kancolle = iOS15_kancolle;
