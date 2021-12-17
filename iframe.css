@@ -6,11 +6,6 @@ body {
 }
 iframe {
   display: inline-block;
-  width:48%;
-  height: 100%;
-}
-.kancolle_support_site {
-  display: flex;
-  width: 100%;
+  width:49%;
   height: 50%;
 }
