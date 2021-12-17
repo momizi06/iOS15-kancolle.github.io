@@ -6,6 +6,8 @@ body {
 }
 iframe {
   display: inline-block;
+  width:48%;
+  height: 100%;
 }
 .kancolle_support_site {
   display: flex;
