@@ -9,6 +9,16 @@ class iOS15_kancolle {
     s.href='https://iOS15-kancolle.github.io/iframe.css';
     document.body.appendChild(s);
     s=document.createElement('iframe');
+    s.src='https://zekamashi.net/';
+    s.width='48%';
+    s.height='100%';
+    document.body.appendChild(s);
+    s=document.createElement('iframe');
+    s.src='https://wikiwiki.jp/kancolle/';
+    s.width='48%';
+    s.height='100%';
+    document.body.appendChild(s);
+    s=document.createElement('iframe');
     s.src='http://kancollecalc.jp/air_supremacy.html';
     s.width='48%';
     s.height='100%';
