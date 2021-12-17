@@ -6,8 +6,8 @@ body {
 }
 iframe {
   width: 49%;
-  height: 50%;
-  display: block;
+  height: 100%;
+  display: inline-block;
 }
 .kancolle_support_site {
   display: flex;
