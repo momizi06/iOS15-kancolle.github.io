@@ -19,7 +19,6 @@ class iOS15_kancolle {
     s.src='http://kc2ndexpcalc.web.fc2.com';
     s.width='50%';
     s.height='50%';
-    s.style='float:left;';
     document.body.appendChild(s);
   }
 };
