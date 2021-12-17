@@ -12,13 +12,9 @@ class iOS15_kancolle {
     document.body.appendChild(s);
     s=document.createElement('iframe');
     s.src='http://kancollecalc.jp/air_supremacy.html';
-    s.width='50%';
-    s.height='50%';
     document.body.appendChild(s);
     s=document.createElement('iframe');
     s.src='http://kc2ndexpcalc.web.fc2.com';
-    s.width='50%';
-    s.height='50%';
     document.body.appendChild(s);
   }
 };
