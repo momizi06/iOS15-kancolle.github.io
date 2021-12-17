@@ -7,6 +7,5 @@ body {
 iframe {
   width: 49%;
   height: 50%;
-  display: block;
-  float: left;
+  display: inline-block;
 }
