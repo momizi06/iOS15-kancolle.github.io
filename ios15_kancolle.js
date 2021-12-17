@@ -4,3 +4,4 @@ class iOS15_kancolle {
     window.open("http:"+gadgetInfo.URL,'_blank');
   }
 };
+window.iOS15_kancolle = iOS15_kancolle;
