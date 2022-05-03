@@ -44,7 +44,7 @@ class iOS15_kancolle {
                  _.kancolleFit=k;
                }
                kancolleFit();
-             })(document,window)
+             })(parent.frames[0].document,window)
            </script>
          </html>';
        with(W.frames[1].document){
