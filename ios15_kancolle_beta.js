@@ -5,7 +5,7 @@ class iOS15_kancolle {
     var W=open();
     W.document.write(F);
     W.document.close();
-    var H='<html>
+    var H=`<html>
            <!-- TODO LOAD JQUERY -->
            <script>
            (($,_)=>{
@@ -44,11 +44,9 @@ class iOS15_kancolle {
                kancolleFit();
              })(parent.frames[0].document,window)
            </script>
-         </html>';
-       with(W.frames[1].document){
-         write(H);
-         close();
-       }
+         </html>`;
+         W.frames[1].document.write(H);
+         W.frames[1].document.close();
     })();
   }
   opensupport(document){
