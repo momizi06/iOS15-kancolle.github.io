@@ -5,6 +5,7 @@ class iOS15_kancolle {
     var W=open();
     W.document.write(F);
     W.document.close();
+    /*
     var H=`<html>
            <!-- TODO LOAD JQUERY -->
            <script>
@@ -46,6 +47,9 @@ class iOS15_kancolle {
            </script>
          </html>`;
          W.frames[1].document.write(H);
+         W.frames[1].document.close();
+         */
+         W.frames[1].document.write(`<script>alert("hello world");</script>`);
          W.frames[1].document.close();
     })();
   }
