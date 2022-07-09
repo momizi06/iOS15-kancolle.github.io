@@ -3,10 +3,8 @@ class iOS15_kancolle {
   (function(){
     var F='<html><frameset rows="*,0"><frame src="http://xy.f5.si:88/http:'+gadgetInfo.URL +'"><frame></frameset></html>';
     var W=open();
-    with(W.document){
-      write(F);
-      close();
-    }
+    W.document.write(F);
+    W.document.close();
     var H='<html>
            <!-- TODO LOAD JQUERY -->
            <script>
