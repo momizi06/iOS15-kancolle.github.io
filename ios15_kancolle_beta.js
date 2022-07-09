@@ -1,7 +1,7 @@
 class iOS15_kancolle {
   open(){
   (function(){
-    var F='<html><frameset rows="*,0"><frame src="http:'+gadgetInfo.URL +'"><frame></frameset></html>';
+    var F='<html><frameset rows="*,0"><frame src="http://xy.f5.si:88/http:'+gadgetInfo.URL +'"><frame></frameset></html>';
     var W=open();
     with(W.document){
       write(F);
