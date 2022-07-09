@@ -34,8 +34,8 @@ class iOS15_kancolle {
                const k=()=>{
                  const w=html.clientWidth,
                        h=_.innerHeight;
-                 w/h<1/.6?gs.transform=%27scale(%27+w/gw+%27)%27:gs.transform=%27scale(%27+h/gh+%27)%27;w<gw?gs.left=%27-%27+(gw-w)/2+%27px%27:gs.left=%270%27};
-                 _.addEventListener(%27resize%27,()=>{
+                 w/h<1/.6?gs.transform='scale(' w/gw ')':gs.transform='scale(' h/gh ')';w<gw?gs.left='-' (gw-w)/2 'px':gs.left='0'};
+                 _.addEventListener('resize',()=>{
                    clearTimeout(t);
                    t=setTimeout(k,10)
                  });
