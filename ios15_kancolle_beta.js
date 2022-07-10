@@ -10,12 +10,13 @@ class iOS15_kancolle {
            <script>
            (($, _) => {
            $.postMessage = function(){};
-           $.parent.frames[0].src = "http://xy.f5.si:88/" + $.parent.frames[0].src;
-           $.parent.frames[0].onload = function(){
-               $.parent.frames[0].document.postMessage = function(){};
-           }
            $.onload = function() {
-  　　　　　    const html = $.documentElement,
+  　　　 $.parent.frames[0].src = "http://xy.f5.si:88/" + $.parent.frames[0].src;
+         $.parent.frames[0].onload = function(){
+               $.parent.frames[0].document.postMessage = function(){};
+        }
+           
+        const html = $.documentElement,
         gf = $.getElementById('htmlWrap'),
         gs = gf.style,
         gw = gf.offsetWidth,
