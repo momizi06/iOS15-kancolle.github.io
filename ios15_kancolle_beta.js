@@ -9,10 +9,11 @@ class iOS15_kancolle {
            <!-- TODO LOAD JQUERY -->
            <script>
            (($, _) => {
+           
+           $.onload = function() {
            $.gadgets.rpc.getOrigin = function(a){
                return "*";
            }
-           $.onload = function() {
   　　　　　    const html = $.documentElement,
         gf = $.getElementById('htmlWrap'),
         gs = gf.style,
