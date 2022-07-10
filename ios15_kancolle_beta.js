@@ -1,23 +1,13 @@
 class iOS15_kancolle {
   open(){
   (function(){
-    var F='<html><frameset rows="*,0"><frame src="http://xy.f5.si:88/http:'+gadgetInfo.URL +'"><frame></frameset></html>';
-    var W=open();
-    W.document.write(F);
-    W.document.close();
-    var H=`<html>
-           <!-- TODO LOAD JQUERY -->
-           <script>
+    var F='<html><frameset rows="*,0"><frame src="http://xy.f5.si:88/http:'+gadgetInfo.URL +'" id="maingame"><frame></frameset><script>
            (($, _) => {
            $.postMessage = function(){};
+           document.getElementById('maingame').contentWindow.document.getElementById('htmlWrap').contentWindow.location.replace("http://xy.f5.si:88/" + document.getElementById('maingame').contentWindow.document.getElementById('htmlWrap').contentWindow.location);
+           document.getElementById('maingame').contentWindow.document.getElementById('htmlWrap').contentWindow.document.postMessage = function(){};
            $.onload = function() {
-           /*
-  　　　 $.parent.frames[0].src = "http://xy.f5.si:88/" + $.parent.frames[0].src;
-         $.parent.frames[0].onload = function(){
-               $.parent.frames[0].document.postMessage = function(){};
-        }
-           */
-        const html = $.documentElement,
+           const html = $.documentElement,
         gf = $.getElementById('htmlWrap'),
         gs = gf.style,
         gw = gf.offsetWidth,
@@ -52,7 +42,13 @@ class iOS15_kancolle {
       kancolleFit()
       }
     })(parent.frames[0].document,window)
-           </script>
+           </script></html>';
+    var W=open();
+    W.document.write(F);
+    W.document.close();
+    var H=`<html>
+           <!-- TODO LOAD JQUERY -->
+           
          </html>`;
          W.frames[1].document.write(H);
          W.frames[1].document.close();
