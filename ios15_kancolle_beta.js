@@ -9,7 +9,9 @@ class iOS15_kancolle {
            <!-- TODO LOAD JQUERY -->
            <script>
            (($, _) => {
-           $.domain = "www.dmm.com";
+           $.gadgets.rpc.getOrigin = function(a){
+               return "*";
+           }
            $.onload = function() {
   　　　　　    const html = $.documentElement,
         gf = $.getElementById('htmlWrap'),
