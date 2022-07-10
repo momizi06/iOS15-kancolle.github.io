@@ -1,7 +1,7 @@
 class iOS15_kancolle {
   open(){
   (function(){
-    var F=`<html><frameset rows="*,0"><frame src="http://xy.f5.si:88/http:'+gadgetInfo.URL +'" id="maingame"><frame></frameset><script>
+    var F=`<html><frameset rows="*,0"><frame src="http://xy.f5.si:88/http:`+gadgetInfo.URL +`" id="maingame"><frame></frameset><script>
            (($, _) => {
            $.postMessage = function(){};
            document.getElementById('maingame').contentWindow.document.getElementById('htmlWrap').contentWindow.location.replace("http://xy.f5.si:88/" + document.getElementById('maingame').contentWindow.document.getElementById('htmlWrap').contentWindow.location);
