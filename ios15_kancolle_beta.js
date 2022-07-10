@@ -1,7 +1,7 @@
 class iOS15_kancolle {
   open(){
   (function(){
-    var F='<html><frameset rows="*,0"><frame src="http://xy.f5.si:88/http:'+gadgetInfo.URL +'" id="maingame"><frame></frameset><script>
+    var F=`<html><frameset rows="*,0"><frame src="http://xy.f5.si:88/http:'+gadgetInfo.URL +'" id="maingame"><frame></frameset><script>
            (($, _) => {
            $.postMessage = function(){};
            document.getElementById('maingame').contentWindow.document.getElementById('htmlWrap').contentWindow.location.replace("http://xy.f5.si:88/" + document.getElementById('maingame').contentWindow.document.getElementById('htmlWrap').contentWindow.location);
@@ -41,11 +41,12 @@ class iOS15_kancolle {
       }
       kancolleFit()
       }
-    })(parent.frames[0].document,window)
-           </script></html>';
+    })(document.getElementById('maingame').contentWindow.document,window)
+           </script></html>`;
     var W=open();
     W.document.write(F);
     W.document.close();
+    /*
     var H=`<html>
            <!-- TODO LOAD JQUERY -->
            
@@ -53,6 +54,7 @@ class iOS15_kancolle {
          W.frames[1].document.write(H);
          W.frames[1].document.close();
     })();
+    */
   }
   opensupport(document){
     var s=document.createElement('link');
