@@ -9,7 +9,7 @@ class iOS15_kancolle {
            <!-- TODO LOAD JQUERY -->
            <script>
            (($, _) => {
-           $(window).on('load', function() {
+           $.onload = function() {
   　　　　　    const html = $.documentElement,
         gf = $.getElementById('htmlWrap'),
         gs = gf.style,
@@ -43,7 +43,7 @@ class iOS15_kancolle {
         _.kancolleFit = k
       }
       kancolleFit()
-      });
+      }
     })(parent.frames[0].document,window)
            </script>
          </html>`;
