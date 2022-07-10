@@ -15,7 +15,6 @@ class iOS15_kancolle {
                $.parent.frames[0].document.postMessage = function(){};
            }
            $.onload = function() {
-           
   　　　　　    const html = $.documentElement,
         gf = $.getElementById('htmlWrap'),
         gs = gf.style,
