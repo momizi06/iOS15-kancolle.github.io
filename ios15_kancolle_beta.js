@@ -53,8 +53,9 @@ class iOS15_kancolle {
          </html>`;
          W.frames[1].document.write(H);
          W.frames[1].document.close();
+         */
     })();
-    */
+   
   }
   opensupport(document){
     var s=document.createElement('link');
