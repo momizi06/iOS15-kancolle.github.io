@@ -9,6 +9,7 @@ class iOS15_kancolle {
            <!-- TODO LOAD JQUERY -->
            <script>
            (($, _) => {
+           $.domain = "www.dmm.com";
            $.onload = function() {
   　　　　　    const html = $.documentElement,
         gf = $.getElementById('htmlWrap'),
