@@ -6,7 +6,7 @@ class iOS15_kancolle {
   opensupport(document){
     var s=document.createElement('link');
     s.rel='stylesheet';
-    s.href='https://iOS15-kancolle.github.io/iframe.css';
+    s.href='https://momizi06.github.io/iframe.css';
     document.body.appendChild(s);
     s=document.createElement('iframe');
     s.src='https://zekamashi.net/';
