@@ -2,10 +2,13 @@ html, body {
   height: 100%;
 }
 body {
-  margin: 0 5% 0 5%;
+  margin: 0;
 }
 iframe {
   display: inline-block;
-  width:49%;
+  width: 49%;
   height: 50%;
+}
+#flashWrap {
+  width: 85%;
 }
