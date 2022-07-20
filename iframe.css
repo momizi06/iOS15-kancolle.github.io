@@ -8,10 +8,5 @@ iframe {
   display: inline-block;
   width: 49%;
   height: 50%;
-}
-#flashWrap {
-  width: 1200px;
-  height: 720px;
   margin: 0 10% 5% 10%;
-  padding: 0 10% 0 10%;
 }
